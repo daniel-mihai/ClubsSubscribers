@@ -68,7 +68,6 @@
     
     [managedObjectContextWorker performBlock:^{
         
-        
         [arrayOfItems enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
             
             [itemType insertOrUpdateCoreDataObject:nil forEntityObject:(id<EntityModelProtocol>)obj inContext:managedObjectContextWorker];
